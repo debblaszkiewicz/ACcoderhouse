@@ -1,0 +1,368 @@
+@import "commons";
+@import "nav";
+@import "fonts";
+@import "mediaquery";
+
+*{
+    margin: 0;
+    padding: 0;
+}  
+
+.sinpadding{
+    padding: 0px !important;
+}
+
+li a {
+    color: bisque;
+    text-decoration: none; /* para sacar el subrayado */
+}
+
+.logonav{
+    position: relative;
+    width: 50px;
+    height: 50px;
+    border-radius: 30px;
+    right: 25px;
+}
+
+.logonav2{
+    left: 20px;
+}
+
+.titulo{
+    display: flex;
+    justify-content: center;
+    align-items:baseline;
+    color:bisque;
+	font-size: 5rem;
+	font-weight: bold;
+	left: 10%;
+	position: absolute;
+	top:35%;
+	width: 80%
+}
+
+.parallax{
+	background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size:  cover;
+	height:30rem;
+	max-width: 100%;
+	position: relative;
+
+}
+
+#header{
+    position: relative;
+}
+
+.image{
+    background-image: 
+    url(https://fondosmil.com/fondo/66504.jpg);
+    background-size: cover;
+}
+
+
+ul li{
+    display: inline-block;
+    position: relative;
+    left: 10%;
+    right: 10%;
+    font: 2em serif;
+    padding-left: 4%;
+    padding-right: 4%;
+    top: 410px;
+}
+
+ul div img{
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    border-radius: 600px;
+    height: 50px;
+    width: 50px;
+}
+
+.body__grid{
+    display: grid;
+    grid-template-columns: 1520px;
+    grid-template-rows: 0px 530px 870px;
+}
+
+.section__inicio{
+    display:inline-block;
+}
+ 
+#titulo__inicio{
+    text-align: center;
+    font-size: 50px;
+    margin-top: 0px;
+    margin-bottom: 30px;
+}
+
+#inicio__texto{   
+    text-align: center;
+    display: grid;
+    grid-template-columns: 900px;
+    justify-content: center; 
+} 
+
+.Galeria__inicio--titulo{
+    text-align: center;
+    margin-bottom: 55px;
+    font-size: 25px;
+}
+
+.Galeria__inicio{
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 40px;
+}
+
+/*html cuadros*/
+#menu{
+    background-color: bisque;
+}
+
+#menu__cuadros{
+    background-color:bisque;
+    display: grid;
+    grid-template-columns: 1515px;
+    grid-template-rows:  0px 550px 1190px;
+}
+
+.Imagenes__cuadros{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    row-gap: 20px;
+    justify-items: center;
+    align-content: space-between;
+}
+
+#Cuadros__titulo{
+    display: flex;
+    justify-content: center;
+    margin-top: 0px;
+    margin-bottom: 53px;
+    font-size: 30px;
+
+}
+
+
+/*html Nosotros*/
+
+#menu__nosotros{
+    background-color: bisque;
+    display: grid;
+    grid-template-columns: 1519px;
+    grid-template-rows:  0px 510px 900px;   
+}
+
+.nosotros{
+    display:flex;
+    margin-top: 5px;
+    justify-content: center;
+    font-size: 60px;
+}
+.nosotros__texto{
+    text-align: center;
+    display: grid;
+    grid-template-columns: 700px;
+    margin-top: 10px;
+    justify-content: center;
+}
+
+/* Seccion Tiendas */ 
+
+#menu__tiendas{
+    background-color: bisque;
+    display: grid;
+    grid-template-columns: 1519px;
+    grid-template-rows: 0px 500px 800px;   
+}
+
+.section__tiendas{
+    margin-bottom: 90px;
+    margin-right: 300px;
+}
+
+#tiendas__titulo{
+    font-size: 50px;
+    margin-top: 50px;
+}
+
+#tiendas__mapa{
+    margin-top: 60px;
+    size: 70px;
+}
+
+#tiendas__subtitulo{
+    margin-top: 40px;
+}
+
+#tienda__mapa--2{
+    margin-top: 60px;
+}
+
+/*Html Mates*/
+
+#menu__mates{
+    background-color: bisque;
+    display: grid;
+    grid-template-columns: 1519px;
+    grid-template-rows:  0px 560px 850px; 
+}
+
+.mates__titulo{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    font-size: 30px;
+    margin-top: 0px;
+}
+
+.mates__galeria{
+    display: grid;
+    margin-top: 100px;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    justify-items: center;
+    row-gap: 20px;
+    align-content: space-between;
+}
+
+
+/* footer */
+
+.section__footer{
+    background-image: 
+    url(https://fondosmil.com/fondo/66504.jpg);
+    background-size:cover;
+    image-resolution: 2500px;
+    height: 124px;
+    margin-top: 60px;
+}
+.footer__text{
+    display: flex;
+    font-size: 35px;
+    color: bisque;
+    justify-content: center;
+}
+
+
+#footer__logofb{
+    border-radius: 10px;
+    position: fixed;
+    margin-bottom: 5px;
+    left: 500px;
+    height: 50px;
+    width: 50px;
+    display: inline-block;
+    align-items: center;
+    position: sticky;
+    
+}
+
+#footer__logoig{
+    border-radius: 10px;
+    position: fixed;
+    left: 800px;
+    margin-bottom: 5px;
+    height: 50px;
+    width: 50px;
+    display: inline-block;
+    align-items: center;
+    position: sticky;
+    
+}
+
+
+/*media query*/
+
+/*tamaño tablet*/
+
+@media screen and (max-width:768px) {
+
+body{
+    display: grid;
+    background-color: rgb(244, 173, 87) !important;
+    grid-template-columns: 1fr;
+    grid-template-rows: 3fr;
+    grid-template-areas: 
+       "header"
+       "section"
+       "footer";
+    }
+
+footer{
+        position:fixed;
+        left:0px;
+        bottom:0px;
+        right: 0px;
+}
+
+
+.mates__galeria{
+    display: grid;
+    margin-top: 100px;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    justify-items: center;
+    row-gap: 20px;
+    align-content: space-between;
+}
+
+
+}
+
+/*Tamaño celular*/
+
+@media screen and (max-width:480px) {
+
+body{
+    display: grid;
+    grid-template-columns: 1fr;
+    background-color: rgb(187, 205, 254) !important;
+}
+
+footer{
+    position:fixed;
+    display: inline-block;
+    left:0px;
+    bottom:0px;
+    right: 0px;
+}
+
+.Galeria__inicio{
+    display: grid;
+    justify-content: space-evenly;
+    margin-top: 100px;
+    grid-template-rows: 3fr;
+    row-gap: 30px;
+    align-items: center;
+    text-align: center;  
+    
+}
+
+.Imagenes__cuadros{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    row-gap: 20px;
+    justify-items: center;
+    
+}
+
+.mates__galeria{
+    display: grid;
+    margin-top: 100px;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    justify-items: center;
+    row-gap: 20px;
+    align-content: space-between;
+}
+
+}
