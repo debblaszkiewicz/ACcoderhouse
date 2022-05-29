@@ -41,8 +41,8 @@ li a {
 	background-attachment: fixed;
 	background-position: center;
 	background-repeat: no-repeat;
-	background-size:  cover;
-	height:30rem;
+	background-size: cover;
+	height: 30rem;
 	max-width: 100%;
 	position: relative;
 
@@ -79,6 +79,8 @@ ul div img{
     width: 50px;
 }
 
+/* Inicio */
+
 .body__grid{
     display: grid;
     grid-template-columns: 1520px;
@@ -94,6 +96,14 @@ ul div img{
     font-size: 50px;
     margin-top: 0px;
     margin-bottom: 30px;
+}
+
+#margin__inicio{
+    margin: 250px;
+    height: 825px;
+    background-color: rgb(254, 212, 160);
+    margin-top: 0px;
+
 }
 
 #inicio__texto{   
@@ -169,6 +179,13 @@ ul div img{
     justify-content: center;
 }
 
+#margin{
+    margin: 300px;
+    height: 900px;
+    margin-top: 5px;
+    background-color: rgb(254, 212, 160);
+}
+
 /* Seccion Tiendas */ 
 
 #menu__tiendas{
@@ -212,20 +229,20 @@ ul div img{
     background-color: bisque;
     display: grid;
     grid-template-columns: 1519px;
-    grid-template-rows:  0px 560px 850px; 
+    grid-template-rows:  0px 550px 1005px; 
 }
 
 .mates__titulo{
     display: flex;
     justify-content: center;
     align-content: center;
-    font-size: 30px;
+    font-size: 45px;
     margin-top: 0px;
 }
 
 .mates__galeria{
     display: grid;
-    margin-top: 100px;
+    margin-top: 80px;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr 1fr;
     justify-items: center;
@@ -281,26 +298,41 @@ ul div img{
 
 /*media query*/
 
+/* Tamaño compu */
+@media screen and (max-widht:1200px) {
+    
+body{
+    display: flex;
+    flex-direction: row;
+}
+
+footer{
+    position:fixed;
+    display: inline-block;
+    left:0px;
+    bottom:0px;
+    right: 0px;
+}
+
+}
+
 /*tamaño tablet*/
 
 @media screen and (max-width:768px) {
 
 body{
-    display: grid;
+    display: flex;
     background-color: rgb(244, 173, 87) !important;
-    grid-template-columns: 1fr;
-    grid-template-rows: 3fr;
-    grid-template-areas: 
-       "header"
-       "section"
-       "footer";
+    flex-direction: column;
+    flex-wrap: wrap;
     }
 
 footer{
-        position:fixed;
-        left:0px;
-        bottom:0px;
-        right: 0px;
+    position:fixed;
+    display: inline-block;
+    left:0px;
+    bottom:0px;
+    right: 0px;
 }
 
 
@@ -310,10 +342,9 @@ footer{
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr;
     justify-items: center;
-    row-gap: 20px;
+    row-gap: 30px;
     align-content: space-between;
 }
-
 
 }
 
