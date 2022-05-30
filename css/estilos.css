@@ -13,6 +13,16 @@ li a {
   text-decoration: none; /* para sacar el subrayado */
 }
 
+
+header p:hover{
+  color: black;
+
+}
+
+nav ul li a:hover{
+  color: black;
+}
+
 .logonav{
   position: relative;
   width: 50px;
@@ -98,6 +108,36 @@ ul div img{
   margin-top: 0px;
   margin-bottom: 30px;
 }
+
+header section p:hover{
+  color: bisque;
+} 
+
+.frase{
+  position: absolute;
+  left: 1%;
+  top: 500px;    
+  background-color: black;
+  color: bisque;
+  font-size: 2rem;
+  padding: 10px 15px 10px 15px;
+  z-index: 3;
+  font-weight: bold;
+}
+
+.animation{  
+  animation-name: aparecer;
+  animation-delay: 1s;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  animation-timing-function:cubic-bezier(0.075, 0.82, 0.165, 1)
+}
+  @keyframes aparecer {
+      20% {opacity: 100%}
+      50% {opacity: 50%;}
+      100% {opacity:30%}
+  }
+
 
 #margin__inicio{
   margin: 250px;
@@ -196,8 +236,38 @@ ul div img{
   grid-template-rows: 0px 480px 800px;   
 }
 
+.contacto {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  align-items: center;
+
+}
+
 .tiendas__contacto{
   margin: 2%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  color: black;
+  background-color: rgb(254, 212, 160);
+  padding: 40px 30px 40px 30px;
+  align-items: center;
+  width: 100vh;
+  height: 78vh;
+}
+
+.contacto__mensaje{
+  height: 150px;
+}
+
+form {
+  display: flex;
+  flex-flow: column nowrap;
+  padding: 15px;
+  font-size: 1.5rem;
+  row-gap: 15px;
+  width: 100%;
 }
 
 
@@ -404,3 +474,4 @@ footer{
 }
 
 }
+
