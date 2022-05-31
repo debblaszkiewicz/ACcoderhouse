@@ -58,10 +58,6 @@ nav ul li a:hover{
 
 }
 
-#header{
-    position: relative;
-}
-
 .image{
     background-image: 
     url(https://fondosmil.com/fondo/66504.jpg);
@@ -124,18 +120,18 @@ header section p:hover{
     font-weight: bold;
 }
 
-  .animation{  
+.animation{  
     animation-name: aparecer;
     animation-delay: 1s;
     animation-duration: 2s;
     animation-iteration-count: infinite;
     animation-timing-function:cubic-bezier(0.075, 0.82, 0.165, 1)
-  }
-    @keyframes aparecer {
+}
+@keyframes aparecer {
         20% {opacity: 100%}
         50% {opacity: 50%;}
         100% {opacity:30%}
-    }
+}
 
 
 #margin__inicio{
